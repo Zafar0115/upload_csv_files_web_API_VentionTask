@@ -1,0 +1,12 @@
+﻿@model IEnumerable<User>
+@{
+    Layout=null;
+}
+<form asp-controller="User" asp-action="Index" method="post" enctype="multipart/form-data">
+    <input type="file" name="file"/>
+    <hr/>
+    <button type="submit" onsubmit="alert("file uploaded successfully")">Upload</button>
+</form>
+
+
+
